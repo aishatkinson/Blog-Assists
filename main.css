@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    background-color:#d4d4d4;
+}
+
+main, #banner{
+    text-align: center;  
+}
+
+nav{
+    width: 100%;
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+nav li{
+    margin: 10px 60px;
+    display: inline;
+}
+
+#banner, .date, .social, nav, footer, .caption{
+    background-color: cadetblue;
+}
+
+.date, .social, footer, .caption{
+    opacity: 0.5;
+}
+
+#banner{
+    max-width: 200px;
+    min-width: 200px;
+    padding: 15px;
+    position: absolute;
+    margin-left: -70px;
+    transform: rotate(-45deg);
+}
+
+nav li, .social, .date{
+    list-style: none;
+}
+
+.date, .picture{
+    float: left;
+    clear: none;
+}
+
+.date{
+    font-family: 'B612 Mono', monospace;
+    position: absolute;
+    top: 1;
+    left: 0;
+    margin-left: 295px;
+    padding: 0px;
+}
+
+.day {
+    font-size: 50px;
+    padding: 0px;
+}
+
+.month{
+    font-size: 30px;
+}
+
+.year{
+    font-size: 25px;
+}
+
+.social{
+    position: absolute;
+    top: 1;
+    right: 0;
+    margin-right: 300px;
+    padding: 5px;
+}
+
+.social:hover{
+    opacity: 1;
+}
+
+article{
+    max-width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    border-top: 1px solid black;
+    padding: 15px 0px;
+    float: left;
+    clear: both;
+}
+
+article:last-child{
+    margin-bottom: 100px;
+}
+
+article:nth-child(odd) .picture{
+    left:0;
+    float: right;
+    clear:right;
+}
+
+p{
+    text-align: left;
+    width: 100%;
+}
+
+ol{
+	text-align: left;
+}
+
+.picture img,.caption{
+    width: 100%;
+    height: 100%;
+}
+
+.picture{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    width: 300px;
+    margin: 10px;
+    float: left;
+    clear: left;
+}
+
+.caption{
+    position: relative;
+    top:-254px;
+    left:300px;
+    transition: left 1s;
+}
+
+.picture:hover .caption{
+    left:0px;
+}
+
+.caption p{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top:40%;
+}
+
+footer{
+	font-family: header;
+	color: #03076c;
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;	
+	bottom: 0;
+	float: left;
+	clear: both;
+}
+
+.taglabel{
+    text-decoration: underline;
+}
+
+.tag{
+    display: inline-block;
+    margin-left:30px;
+    padding:3px;
+    border: 2px solid #466289;
+    transform: rotate(-15deg);
+}
